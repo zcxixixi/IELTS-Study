@@ -128,6 +128,8 @@ These usually describe `impression`, not objective fact.
 | 说明/阐释 | illustrate = demonstrate = explain = show = depict = portray |
 | 传统的 | conventional = traditional = established = orthodox |
 | 固有的 | inherent = intrinsic = innate = built-in = fundamental |
+| 重新出现 | reappear = re-emergence |
+| 特征/特性（扩展） | long-lost traits = certain characteristics |
 | 意识到/认识到 | conscious = aware = realize = recognize = acknowledge |
 | 特征/特性 | feature = property = trait = characteristic = attribute = quality |
 | 能力 | faculty = ability = capacity = capability = aptitude |
