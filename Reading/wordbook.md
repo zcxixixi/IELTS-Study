@@ -129,11 +129,13 @@ These usually describe `impression`, not objective fact.
 | 传统的 | conventional = traditional = established = orthodox |
 | 固有的 | inherent = intrinsic = innate = built-in = fundamental |
 | 理解/意识到 | realise = understand = had shown = be aware of |
-| 计算 | calculate = work out = measure = determine = figure out |
-| 比较 | comparing = from different locations = difference |
+| 计算/推算 | calculate = work out = determine = measure = figure out |
+| 基于/根据 | based on = according to = derived from = using |
+| 排除/使不可能 | ruled out = unable to = prevented = made impossible |
+| 相当准确 | a fair degree of accuracy = reasonably accurate = quite close |
 | 控制/决定 | govern = depend on = determine = dictate |
 | 轨道运动 | orbital speeds = time taken to go round = revolution period |
-| 距离 | distance = how far = separation |
+| 距离 | distance = separation = how far apart |
 | 重新出现 | reappear = re-emergence |
 | 特征/特性（扩展） | long-lost traits = certain characteristics |
 | 意识到/认识到 | conscious = aware = realize = recognize = acknowledge |
