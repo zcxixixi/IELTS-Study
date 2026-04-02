@@ -141,7 +141,7 @@ These usually describe `impression`, not objective fact.
 | 重新出现 | reappear = re-emergence |
 | 特征/特性（扩展） | long-lost traits = certain characteristics |
 | 意识到/认识到 | conscious = aware = realize = recognize = acknowledge |
-| 特征/特性 | feature = property = trait = characteristic = attribute = quality |
+| 特征/特性 | feature = property = trait = characteristic = attribute = quality = aspect |
 | 能力 | faculty = ability = capacity = capability = aptitude |
 | 损害/破坏 | impair = damage = harm = undermine = weaken = compromise |
 
