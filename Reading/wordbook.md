@@ -137,6 +137,15 @@ These usually describe `impression`, not objective fact.
 | 轨道运动 | orbital speeds = time taken to go round = revolution period |
 | 距离 | distance = separation = how far apart |
 | 副产品/工业产出 | byproduct = waste product = output of industrial process |
+| 短暂的 | short-lived = few = brief = limited |
+| 提升/推高 | raised = pushed = increased = improved |
+| 极少/可忽略 | negligible = extremely low = minimal = insignificant |
+| 容易受到 | susceptible to = prone to = vulnerable to |
+| 广泛可得 | widely available = found in abundance = abundant |
+| 可行的 | viable = workable = feasible = real alternative |
+| 倒闭/停止 | folded = went out of business = phased out = discontinued |
+| 坚持认为 | adamant = firmly believed = insisted |
+| 不断修改 | tinkered = constantly altered = endlessly modified |
 | 高楼 | tower block = high-rise building = skyscraper |
 | 建筑外部 | exterior = outdoor = outside |
 | 重新出现 | reappear = re-emergence |
