@@ -22,6 +22,55 @@
 
 ---
 
+## 二、7-8分论证架构详解
+
+### 核心公式
+
+```
+① 分论点   → 是什么（结论清单的果，要窄要具体）
+② 机制     → 为什么（物的客观特征）用 This is because...which means
+③ 延伸     → 所以导致什么（②的结果）用 This allows / thereby
+④ 例子     → 具体场景证明 用 For example
+⑤ 结论     → 改写①回扣论点 用 Therefore
+```
+
+### 6分 vs 7-8分的本质区别
+
+| 分数 | 结构 |
+|------|------|
+| 6分 | 分论点 → 例子 → 结论（缺机制层） |
+| 7-8分 | 分论点 → 机制 → 延伸 → 例子 → 结论 |
+
+### 三层推进法
+
+②③④不是重复，是**螺旋推进**，用三个问题驱动：
+
+- **② 为什么？**（从物的特征找原因）
+- **③ 所以呢？**（把原因往下推一层）
+- **④ 比如呢？**（给一个具体场景）
+
+> 关键：结论清单只是「果」，物的客观特征才是「因」，中间的机制层是拿高分的关键。
+
+### 完整示例（祖父母带孩子 → 省钱角度）
+
+> ① `Grandparents can significantly reduce the financial burden on families.`
+>
+> ② `This is because grandparents provide childcare at no cost, which means families can save a significant amount of money that would otherwise be spent on professional childcare fees.`
+>
+> ③ `This financial relief allows parents to allocate resources to other essential needs, such as education or healthcare, thereby improving the family's overall standard of living.`
+>
+> ④ `For example, in a family with two or three children, the cost of enrolling each child in a childcare centre can amount to thousands of dollars annually, placing considerable pressure on household finances.`
+>
+> ⑤ `Therefore, grandparent-led childcare is a more financially sustainable option for many families.`
+
+### 常见错误
+
+- ❌ 分论点太宽泛（如"生活质量下降"）→ 要落实到具体维度
+- ❌ ②③④平铺叙述，没有推进 → 每句要回答上一句留下的问题
+- ❌ 从结论清单倒推论点 → 先想物的特征，再找落脚点
+
+---
+
 ## 二、大作文段落结构
 
 四段式：介绍段 → 主体段1 → 主体段2 → 结尾段
