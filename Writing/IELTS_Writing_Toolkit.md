@@ -149,13 +149,22 @@
 
 构思论点时，用这个清单找「落脚点」。**先想具体论点，再用清单检查——不要反向倒推。**
 
-| 维度 | 维度 | 维度 |
-|------|------|------|
-| 💰 钱（经济收入） | 🏃 身体健康 | 😊 心情 |
-| 😰 压力 | 📚 学习表现 | 💼 工作表现 |
-| 🎯 就业机会 | 🔒 安全 | 🚔 犯罪 |
-| 🌿 环境保护 | 🧠 某种能力 | 🎭 某种性格 |
-| 🌈 各方面的多样性 | ⭐ 生活质量 | |
+| 维度 | 学术英文表达 |
+|------|-------------|
+| 💰 钱（经济收入） | financial benefits / economic income / reduces financial burden |
+| 🏃 身体健康 | physical health / health and fitness / promotes well-being |
+| 😊 心情 | emotional well-being / improves mood / enhances happiness |
+| 😰 压力 | reduces stress / alleviates pressure / lowers anxiety levels |
+| 📚 学习表现 | academic performance / improves learning outcomes |
+| 💼 工作表现 | work productivity / job performance / professional efficiency |
+| 🎯 就业机会 | employment prospects / career opportunities / employability |
+| 🔒 安全 | personal safety / public security / reduces risk of harm |
+| 🚔 犯罪 | crime rates / reduces criminal behaviour / deters offenders |
+| 🌿 环境保护 | environmental sustainability / reduces carbon emissions |
+| 🧠 某种能力 | cognitive ability / critical thinking / problem-solving skills |
+| 🎭 某种性格 | personal character / builds resilience / fosters independence |
+| 🌈 各方面的多样性 | cultural diversity / promotes inclusivity / broadens perspectives |
+| ⭐ 生活质量 | quality of life / overall well-being / standard of living |
 
 > ⚠️ 「生活质量」这类词太宽泛，最好落实到更具体的维度，如 reduces stress / improves employment prospects。
 
