@@ -126,6 +126,35 @@
 
 ## 四、句型零件库
 
+### 个人零件库（已熟练掌握）
+
+**引入原因段**
+- `There are a myriad of reasons why...`
+- `The prime / major contributing factor is that...`
+- `The second noteworthy reason is that...`
+
+**主体段开头**
+- `First and foremost, it is important to acknowledge that...`
+- `On top of that, a further advantage / benefit is that...`
+
+**结尾段**
+- `To sum up, ...`
+- `In conclusion, I strongly believe that...`
+
+**机制推进（需要熟练）**
+- `This means that...`
+- `which means that...`
+- `By doing X, people are able to..., thereby...`
+
+**举例**
+- `For example, ...`
+- `Consider a situation where [场景], [结果].`
+
+**结论回扣**
+- `Therefore, ...`
+
+---
+
 ### ① 引言段
 
 **立场预告（偏向正面）**
