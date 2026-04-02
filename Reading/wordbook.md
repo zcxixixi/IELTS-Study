@@ -128,6 +128,12 @@ These usually describe `impression`, not objective fact.
 | 说明/阐释 | illustrate = demonstrate = explain = show = depict = portray |
 | 传统的 | conventional = traditional = established = orthodox |
 | 固有的 | inherent = intrinsic = innate = built-in = fundamental |
+| 理解/意识到 | realise = understand = had shown = be aware of |
+| 计算 | calculate = work out = measure = determine = figure out |
+| 比较 | comparing = from different locations = difference |
+| 控制/决定 | govern = depend on = determine = dictate |
+| 轨道运动 | orbital speeds = time taken to go round = revolution period |
+| 距离 | distance = how far = separation |
 | 重新出现 | reappear = re-emergence |
 | 特征/特性（扩展） | long-lost traits = certain characteristics |
 | 意识到/认识到 | conscious = aware = realize = recognize = acknowledge |
