@@ -136,6 +136,8 @@ These usually describe `impression`, not objective fact.
 | 控制/决定 | govern = depend on = determine = dictate |
 | 轨道运动 | orbital speeds = time taken to go round = revolution period |
 | 距离 | distance = separation = how far apart |
+| 高楼 | tower block = high-rise building = skyscraper |
+| 建筑外部 | exterior = outdoor = outside |
 | 重新出现 | reappear = re-emergence |
 | 特征/特性（扩展） | long-lost traits = certain characteristics |
 | 意识到/认识到 | conscious = aware = realize = recognize = acknowledge |
