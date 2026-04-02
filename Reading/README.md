@@ -6,6 +6,8 @@ This folder stores IELTS Reading materials and reusable solving methods.
 
 - `question-analysis-template.md`: template for future question explanations
 - `strategy-notes.md`: reusable methods and recurring traps
+- `wordbook.md`: cumulative memorisation wordbook for useful vocabulary
+- `wordbook-laughter-and-humour.md`: passage-based vocabulary, paraphrases, and usage notes
 
 ## Documentation Rule
 
@@ -17,3 +19,11 @@ Each future analysis should try to answer:
 4. How is the correct answer matched or paraphrased?
 5. What trap caused the mistake?
 6. What method can be reused next time?
+
+## Study Workflow Reminder
+
+For IELTS Reading sessions in this workspace:
+
+- use `wordbook.md` as the default memorisation file
+- proactively review a few older words during study
+- add a small new batch only when the words are genuinely useful
