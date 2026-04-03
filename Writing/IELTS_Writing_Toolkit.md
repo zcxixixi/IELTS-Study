@@ -330,3 +330,53 @@ The first reason for this phenomenon is that [原因]
 每个零件绑定一个使用场景，提取时调用工具，不是背句子。
 
 > 例：「Age alone does not determine X」→ 适用于所有「用单一标准衡量复杂问题」的题目
+
+---
+
+## 七、Report 真题库
+
+### 2017.12.09 城乡差距
+
+**题目：** A rise in the standard of living in a country often only seems to benefit cities rather than rural areas. What problems might this difference cause? How might these problems be reduced?
+
+**题型：** Report 两问（问题 + 解决方案）
+
+---
+
+**Problems（城乡差距带来的问题）**
+
+| 论点 | 展开方向 |
+|------|----------|
+| 农村劳动力流失 | brain drain / labour drain → 农村经济空心化 |
+| 城市就业压力增大 | 人口涌入城市 → unemployment pressure |
+| 城市资源紧张 | 交通、医疗超负荷 → transport, healthcare infrastructure |
+
+**Solutions（如何减少这些问题）**
+
+- 在农村建立基础设施（build infrastructure in rural areas）
+- 政府出台农村福利政策（encourage government welfare policies for rural areas）
+- 政府高价收购农产品（government purchase agricultural products at higher prices）
+
+---
+
+## 八、是否赞同题型（Agree/Disagree）
+
+### 两种写法
+
+**第一种：completely agree/disagree**
+> 改写题目 + 表明完全立场 → 理由一 → 理由二 → 综上所述
+
+**第二种：largely agree/disagree（推荐/冒险写法）**
+> 改写 + 虽然...但总体... → 扩展让步部分 → However 扩展强的一方 → In conclusion, I largely agree/disagree
+
+⚠️ 冒险写法注意：让步段要短，强论点段要长，结尾立场必须清晰。
+
+---
+
+### 核心技巧：以子之矛攻子之盾
+
+让步部分的优点，可以用同一个优点来反驳：
+
+> 大城市医疗资源丰富 → 但工作太忙没时间就医 + 高质量医疗被少数富裕阶层垄断，普通人享受不到
+
+这叫**以子之矛攻子之盾**，是冒险写法的最高级操作。
