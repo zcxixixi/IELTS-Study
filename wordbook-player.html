@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Wordbook</title>
+<style>
+  :root {
+    --bg: #0d0d14;
+    --surface: #13131f;
+    --border: #1e1e30;
+    --accent: #7c3aed;
+    --accent-dim: #3b1f6e;
+    --text: #e2e8f0;
+    --muted: #4a5568;
+    --zh: #a78bfa;
+    --green: #34d399;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 40px 20px 80px;
+  }
+
+  /* Header */
+  header { text-align: center; margin-bottom: 32px; }
+  header h1 {
+    font-size: 1.1rem; font-weight: 500;
+    color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  header .count { font-size: 0.75rem; color: var(--muted); }
+
+  /* Controls */
+  .controls {
+    display: flex; gap: 10px; justify-content: center;
+    align-items: center; flex-wrap: wrap; margin-bottom: 28px;
+  }
+  .btn {
+    padding: 7px 18px; border-radius: 20px; border: none;
+    cursor: pointer; font-size: 0.82rem; font-weight: 600;
+    letter-spacing: 0.03em; transition: all 0.15s;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: #6d28d9; }
+  .btn-ghost {
+    background: transparent; color: var(--muted);
+    border: 1px solid var(--border);
+  }
+  .btn-ghost:hover { color: var(--text); border-color: var(--muted); }
+
+  .sep { width: 1px; height: 20px; background: var(--border); }
+
+  .ctrl-label { font-size: 0.75rem; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+  input[type=range] { width: 72px; accent-color: var(--accent); cursor: pointer; }
+
+  /* Status bar */
+  .status {
+    text-align: center; height: 22px; margin-bottom: 16px;
+    font-size: 0.75rem; color: var(--green); letter-spacing: 0.04em;
+    transition: opacity 0.3s;
+  }
+
+  /* Word list */
+  .list { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 4px; }
+
+  .row {
+    display: flex; align-items: flex-start;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 11px 14px; gap: 12px;
+    transition: border-color 0.15s;
+  }
+  .row:hover { border-color: #2a2a42; }
+  .row.playing { border-color: var(--accent); background: #110d24; }
+
+  .zh-tag {
+    min-width: 108px; flex-shrink: 0;
+    font-size: 0.78rem; font-weight: 600;
+    color: var(--zh); padding-top: 2px;
+  }
+
+  .synonyms {
+    display: flex; flex-wrap: wrap; gap: 6px; flex: 1;
+  }
+
+  .chip {
+    display: inline-flex; align-items: center;
+    padding: 3px 10px; border-radius: 14px;
+    font-size: 0.82rem; color: #94a3b8;
+    background: #0f0f1e; border: 1px solid #1e1e30;
+    cursor: pointer; transition: all 0.12s; user-select: none;
+    white-space: nowrap;
+  }
+  .chip:hover { color: #fff; border-color: var(--accent); background: var(--accent-dim); }
+  .chip.lit { color: #fff; border-color: var(--accent); background: var(--accent-dim); }
+
+  .play-all-btn {
+    flex-shrink: 0; width: 26px; height: 26px;
+    border-radius: 50%; border: 1px solid var(--border);
+    background: transparent; color: var(--muted);
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    font-size: 0.7rem; transition: all 0.12s; padding-top: 1px;
+  }
+  .play-all-btn:hover { border-color: var(--accent); color: var(--zh); }
+  .row.playing .play-all-btn { border-color: var(--accent); color: var(--zh); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>IELTS · Synonym Player</h1>
+  <div class="count" id="countLabel"></div>
+</header>
+
+<div class="controls">
+  <button class="btn btn-primary" onclick="autoPlayAll()">▶ 自动播放</button>
+  <button class="btn btn-ghost" onclick="stopAll()">⏹ 停止</button>
+  <div class="sep"></div>
+  <label class="ctrl-label">间隔
+    <input type="range" id="pauseRange" min="0.5" max="5" step="0.5" value="1.5">
+    <span id="pauseVal">1.5s</span>
+  </label>
+</div>
+
+<div class="status" id="status"></div>
+<div class="list" id="wordList"></div>
+
+<audio id="player"></audio>
+
+<script>
+let words = [];
+let isAuto = false;
+let autoQueue = [];
+let autoPos = 0;
+let activeChip = null;
+let activeRow = null;
+
+const audio = document.getElementById('player');
+const statusEl = document.getElementById('status');
+
+function getPause() {
+  return parseFloat(document.getElementById('pauseRange').value) * 1000;
+}
+document.getElementById('pauseRange').addEventListener('input', function() {
+  document.getElementById('pauseVal').textContent = this.value + 's';
+});
+
+// 音频路径
+function chipPath(wordIdx, synIdx) {
+  return `audio/${String(wordIdx).padStart(3,'0')}/${synIdx}.mp3`;
+}
+function allPath(wordIdx) {
+  return `audio/${String(wordIdx).padStart(3,'0')}/all.mp3`;
+}
+
+// 高亮 chip
+function setActiveChip(el) {
+  if (activeChip) activeChip.classList.remove('lit');
+  activeChip = el;
+  if (el) el.classList.add('lit');
+}
+function setActiveRow(el) {
+  if (activeRow) activeRow.classList.remove('playing');
+  activeRow = el;
+  if (el) el.classList.add('playing');
+}
+
+// 播放一个 mp3，结束后回调
+function playFile(src, onEnd) {
+  audio.src = src;
+  audio.onended = onEnd || null;
+  audio.onerror = onEnd || null;
+  audio.play().catch(() => { if (onEnd) onEnd(); });
+}
+
+// 点击单个词
+function clickChip(wordIdx, synIdx, chipEl, rowEl) {
+  stopAll();
+  setActiveChip(chipEl);
+  setActiveRow(rowEl);
+  const w = words[wordIdx];
+  statusEl.textContent = `▶  ${w.zh}  ·  ${w.synonyms[synIdx]}`;
+  playFile(chipPath(wordIdx, synIdx), () => {
+    setActiveChip(null);
+    setActiveRow(null);
+    statusEl.textContent = '';
+  });
+}
+
+// 点击整串按钮
+function clickAll(wordIdx, rowEl) {
+  stopAll();
+  setActiveRow(rowEl);
+  const w = words[wordIdx];
+  statusEl.textContent = `▶  ${w.zh}  ·  整串`;
+  playFile(allPath(wordIdx), () => {
+    setActiveRow(null);
+    statusEl.textContent = '';
+  });
+}
+
+// 自动播放所有（整串）
+function autoPlayAll() {
+  stopAll();
+  isAuto = true;
+  autoQueue = words.map((_, i) => i);
+  autoPos = 0;
+  nextAuto();
+}
+
+function nextAuto() {
+  if (!isAuto || autoPos >= autoQueue.length) {
+    stopAll();
+    statusEl.textContent = '✓  播放完毕';
+    setTimeout(() => statusEl.textContent = '', 2000);
+    return;
+  }
+  const idx = autoQueue[autoPos];
+  const rowEl = document.getElementById(`row-${idx}`);
+  setActiveRow(rowEl);
+  if (rowEl) rowEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  const w = words[idx];
+  statusEl.textContent = `▶  ${autoPos + 1} / ${autoQueue.length}  ·  ${w.zh}`;
+  playFile(allPath(idx), () => {
+    if (isAuto) {
+      autoPos++;
+      setTimeout(nextAuto, getPause());
+    }
+  });
+}
+
+function stopAll() {
+  isAuto = false;
+  audio.pause();
+  audio.src = '';
+  setActiveChip(null);
+  setActiveRow(null);
+  statusEl.textContent = '';
+}
+
+// 渲染
+function render() {
+  document.getElementById('countLabel').textContent = `${words.length} 个同义替换组`;
+  const list = document.getElementById('wordList');
+  list.innerHTML = '';
+
+  words.forEach((w, i) => {
+    const row = document.createElement('div');
+    row.className = 'row';
+    row.id = `row-${i}`;
+
+    const zhTag = document.createElement('div');
+    zhTag.className = 'zh-tag';
+    zhTag.textContent = w.zh;
+
+    const synonymsDiv = document.createElement('div');
+    synonymsDiv.className = 'synonyms';
+
+    w.synonyms.forEach((syn, j) => {
+      const chip = document.createElement('span');
+      chip.className = 'chip';
+      chip.textContent = syn;
+      chip.addEventListener('click', (e) => {
+        e.stopPropagation();
+        clickChip(i, j, chip, row);
+      });
+      synonymsDiv.appendChild(chip);
+    });
+
+    const allBtn = document.createElement('button');
+    allBtn.className = 'play-all-btn';
+    allBtn.title = '读整串';
+    allBtn.textContent = '▶';
+    allBtn.addEventListener('click', () => clickAll(i, row));
+
+    row.appendChild(allBtn);
+    row.appendChild(zhTag);
+    row.appendChild(synonymsDiv);
+    list.appendChild(row);
+  });
+}
+
+// 加载 words.json
+fetch('words.json')
+  .then(r => r.json())
+  .then(data => {
+    words = data;
+    render();
+  })
+  .catch(() => {
+    statusEl.textContent = '⚠ 请先运行 generate-audio.py';
+  });
+</script>
+</body>
+</html>

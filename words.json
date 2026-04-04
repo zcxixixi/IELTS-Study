@@ -1,0 +1,592 @@
+[
+  {
+    "zh": "加剧/恶化",
+    "synonyms": [
+      "deteriorate",
+      "worsen",
+      "exacerbate",
+      "aggravate"
+    ]
+  },
+  {
+    "zh": "减少/减弱",
+    "synonyms": [
+      "diminish",
+      "decrease",
+      "decline",
+      "reduce",
+      "shrink",
+      "dwindle"
+    ]
+  },
+  {
+    "zh": "促进/推动",
+    "synonyms": [
+      "facilitate",
+      "promote",
+      "accelerate",
+      "foster",
+      "boost"
+    ]
+  },
+  {
+    "zh": "阻碍",
+    "synonyms": [
+      "hinder",
+      "obstacle",
+      "barrier",
+      "impede",
+      "hamper",
+      "restrain"
+    ]
+  },
+  {
+    "zh": "引发/导致",
+    "synonyms": [
+      "trigger",
+      "cause",
+      "lead to",
+      "result in",
+      "bring about",
+      "give rise to"
+    ]
+  },
+  {
+    "zh": "缓解",
+    "synonyms": [
+      "alleviate",
+      "relieve",
+      "ease",
+      "reduce",
+      "mitigate"
+    ]
+  },
+  {
+    "zh": "主张/倡导",
+    "synonyms": [
+      "advocate",
+      "support",
+      "argue for",
+      "promote",
+      "endorse"
+    ]
+  },
+  {
+    "zh": "质疑/反对",
+    "synonyms": [
+      "dispute",
+      "challenge",
+      "contradict",
+      "oppose",
+      "question",
+      "reject"
+    ]
+  },
+  {
+    "zh": "承认",
+    "synonyms": [
+      "acknowledge",
+      "admit",
+      "recognize",
+      "accept",
+      "concede"
+    ]
+  },
+  {
+    "zh": "推测",
+    "synonyms": [
+      "speculate",
+      "guess",
+      "hypothesize",
+      "assume",
+      "suggest"
+    ]
+  },
+  {
+    "zh": "强化/证明",
+    "synonyms": [
+      "reinforce",
+      "strengthen",
+      "confirm",
+      "support",
+      "validate"
+    ]
+  },
+  {
+    "zh": "说明/阐释",
+    "synonyms": [
+      "illustrate",
+      "demonstrate",
+      "explain",
+      "show",
+      "depict",
+      "portray"
+    ]
+  },
+  {
+    "zh": "传统的",
+    "synonyms": [
+      "conventional",
+      "traditional",
+      "established",
+      "orthodox"
+    ]
+  },
+  {
+    "zh": "固有的",
+    "synonyms": [
+      "inherent",
+      "intrinsic",
+      "innate",
+      "built-in",
+      "fundamental"
+    ]
+  },
+  {
+    "zh": "理解/意识到",
+    "synonyms": [
+      "realise",
+      "understand",
+      "had shown",
+      "be aware of"
+    ]
+  },
+  {
+    "zh": "计算/推算",
+    "synonyms": [
+      "calculate",
+      "work out",
+      "determine",
+      "measure",
+      "figure out"
+    ]
+  },
+  {
+    "zh": "基于/根据",
+    "synonyms": [
+      "based on",
+      "according to",
+      "derived from",
+      "using"
+    ]
+  },
+  {
+    "zh": "排除/使不可能",
+    "synonyms": [
+      "ruled out",
+      "unable to",
+      "prevented",
+      "made impossible"
+    ]
+  },
+  {
+    "zh": "相当准确",
+    "synonyms": [
+      "a fair degree of accuracy",
+      "reasonably accurate",
+      "quite close"
+    ]
+  },
+  {
+    "zh": "控制/决定",
+    "synonyms": [
+      "govern",
+      "depend on",
+      "determine",
+      "dictate"
+    ]
+  },
+  {
+    "zh": "轨道运动",
+    "synonyms": [
+      "orbital speeds",
+      "time taken to go round",
+      "revolution period"
+    ]
+  },
+  {
+    "zh": "距离",
+    "synonyms": [
+      "distance",
+      "separation",
+      "how far apart"
+    ]
+  },
+  {
+    "zh": "副产品/工业产出",
+    "synonyms": [
+      "byproduct",
+      "waste product",
+      "output of industrial process"
+    ]
+  },
+  {
+    "zh": "短暂的",
+    "synonyms": [
+      "short-lived",
+      "few",
+      "brief",
+      "limited"
+    ]
+  },
+  {
+    "zh": "提升/推高",
+    "synonyms": [
+      "raised",
+      "pushed",
+      "increased",
+      "improved"
+    ]
+  },
+  {
+    "zh": "极少/可忽略",
+    "synonyms": [
+      "negligible",
+      "extremely low",
+      "minimal",
+      "insignificant"
+    ]
+  },
+  {
+    "zh": "容易受到",
+    "synonyms": [
+      "susceptible to",
+      "prone to",
+      "vulnerable to"
+    ]
+  },
+  {
+    "zh": "广泛可得",
+    "synonyms": [
+      "widely available",
+      "found in abundance",
+      "abundant"
+    ]
+  },
+  {
+    "zh": "可行的",
+    "synonyms": [
+      "viable",
+      "workable",
+      "feasible",
+      "real alternative"
+    ]
+  },
+  {
+    "zh": "倒闭/停止",
+    "synonyms": [
+      "folded",
+      "went out of business",
+      "phased out",
+      "discontinued"
+    ]
+  },
+  {
+    "zh": "坚持认为",
+    "synonyms": [
+      "adamant",
+      "firmly believed",
+      "insisted"
+    ]
+  },
+  {
+    "zh": "不断修改",
+    "synonyms": [
+      "tinkered",
+      "constantly altered",
+      "endlessly modified"
+    ]
+  },
+  {
+    "zh": "高楼",
+    "synonyms": [
+      "tower block",
+      "high-rise building",
+      "skyscraper"
+    ]
+  },
+  {
+    "zh": "建筑外部",
+    "synonyms": [
+      "exterior",
+      "outdoor",
+      "outside"
+    ]
+  },
+  {
+    "zh": "重新出现",
+    "synonyms": [
+      "reappear",
+      "re-emergence"
+    ]
+  },
+  {
+    "zh": "特征/特性（扩展）",
+    "synonyms": [
+      "long-lost traits",
+      "certain characteristics"
+    ]
+  },
+  {
+    "zh": "意识到/认识到",
+    "synonyms": [
+      "conscious",
+      "aware",
+      "realize",
+      "recognize",
+      "acknowledge"
+    ]
+  },
+  {
+    "zh": "特征/特性",
+    "synonyms": [
+      "feature",
+      "property",
+      "trait",
+      "characteristic",
+      "attribute",
+      "quality",
+      "aspect"
+    ]
+  },
+  {
+    "zh": "能力",
+    "synonyms": [
+      "faculty",
+      "ability",
+      "capacity",
+      "capability",
+      "aptitude",
+      "competence"
+    ]
+  },
+  {
+    "zh": "损害/破坏",
+    "synonyms": [
+      "impair",
+      "damage",
+      "harm",
+      "undermine",
+      "weaken",
+      "compromise"
+    ]
+  },
+  {
+    "zh": "喜欢/热衷于",
+    "synonyms": [
+      "keen",
+      "like",
+      "enjoy",
+      "be fond of",
+      "enthusiastic about"
+    ]
+  },
+  {
+    "zh": "产品/成分",
+    "synonyms": [
+      "product",
+      "ingredient",
+      "component",
+      "element"
+    ]
+  },
+  {
+    "zh": "尤其/特别（听力）",
+    "synonyms": [
+      "especially ← if you like fish"
+    ]
+  },
+  {
+    "zh": "氛围/场所",
+    "synonyms": [
+      "atmosphere",
+      "place",
+      "environment",
+      "setting",
+      "venue"
+    ]
+  },
+  {
+    "zh": "选择/种类",
+    "synonyms": [
+      "choice",
+      "selection",
+      "variety",
+      "option",
+      "range"
+    ]
+  },
+  {
+    "zh": "好的/不错",
+    "synonyms": [
+      "good",
+      "nice",
+      "great",
+      "excellent",
+      "fine",
+      "amazing"
+    ]
+  },
+  {
+    "zh": "范围起点",
+    "synonyms": [
+      "from",
+      "starts at",
+      "beginning at"
+    ]
+  },
+  {
+    "zh": "免费",
+    "synonyms": [
+      "free",
+      "no extra cost",
+      "at no charge",
+      "complimentary"
+    ]
+  },
+  {
+    "zh": "针对损坏",
+    "synonyms": [
+      "for damage",
+      "in case of damage"
+    ]
+  },
+  {
+    "zh": "设备/物品",
+    "synonyms": [
+      "equipment",
+      "items",
+      "goods"
+    ]
+  },
+  {
+    "zh": "自己负责",
+    "synonyms": [
+      "own",
+      "organise yourself",
+      "arrange yourself"
+    ]
+  },
+  {
+    "zh": "允许/可以",
+    "synonyms": [
+      "allowed",
+      "can request",
+      "permitted",
+      "available"
+    ]
+  },
+  {
+    "zh": "一周内",
+    "synonyms": [
+      "within 7 days",
+      "within a week"
+    ]
+  },
+  {
+    "zh": "可能",
+    "synonyms": [
+      "possible",
+      "may be able to",
+      "might",
+      "potentially"
+    ]
+  },
+  {
+    "zh": "解决/克服",
+    "synonyms": [
+      "overcome",
+      "deal with",
+      "tackle",
+      "address",
+      "handle"
+    ]
+  },
+  {
+    "zh": "保守的",
+    "synonyms": [
+      "conservative",
+      "traditional",
+      "conventional",
+      "orthodox",
+      "cautious"
+    ]
+  },
+  {
+    "zh": "保守估计",
+    "synonyms": [
+      "conservative estimate",
+      "modest estimate",
+      "cautious figure",
+      "understated"
+    ]
+  },
+  {
+    "zh": "寻找",
+    "synonyms": [
+      "looking for",
+      "trying to find",
+      "searching for",
+      "seeking"
+    ]
+  },
+  {
+    "zh": "到目前为止",
+    "synonyms": [
+      "so far",
+      "until now",
+      "up to now",
+      "to date",
+      "thus far"
+    ]
+  },
+  {
+    "zh": "少于/不超过",
+    "synonyms": [
+      "under",
+      "fewer than",
+      "less than",
+      "no more than",
+      "below"
+    ]
+  },
+  {
+    "zh": "入口/大门",
+    "synonyms": [
+      "entrance",
+      "gate",
+      "door",
+      "entry",
+      "access point"
+    ]
+  },
+  {
+    "zh": "回复",
+    "synonyms": [
+      "respond",
+      "reply",
+      "get back to",
+      "answer"
+    ]
+  },
+  {
+    "zh": "立刻/及时",
+    "synonyms": [
+      "promptly",
+      "immediately",
+      "right away",
+      "without delay",
+      "at once"
+    ]
+  },
+  {
+    "zh": "看起来像/类似",
+    "synonyms": [
+      "resemble",
+      "like",
+      "look like",
+      "similar to",
+      "comparable to"
+    ]
+  }
+]
